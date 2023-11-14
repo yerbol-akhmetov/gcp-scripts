@@ -37,10 +37,4 @@ mamba init
 # cd pypsa-eur
 
 # snakemake -call results/test-elec/networks/elec_s_6_ec_lcopt_Co2L-24H.nc --configfile config/test/config.electricity.yaml
-After experimenting with various approaches, I was successful in running the pypsa-eur tutorial using the following files:
-- gcp-infra.sh for creating a custom VM
-- vm-config.sh to set up the VM (planning to integrate Gurobi and web-GIS soon)
-These files still require further refinement to ensure they are reusable by everyone. 
-What do you all think? Are you on board with this approach?
-
 
