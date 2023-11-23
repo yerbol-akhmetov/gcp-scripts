@@ -9,7 +9,6 @@ gcloud compute instances create "my-vm" \
     --image-project="debian-cloud" \
     # --boot-disk-size = 50
 
-
 # SSH into the VM instance
 # gcloud compute ssh "my-vm" --zone "us-central1-a"
 
