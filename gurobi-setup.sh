@@ -1,3 +1,4 @@
+# create opt directory in your /home
 mkdir opt
 
 cd opt
@@ -12,9 +13,12 @@ cd ..
 
 nano ~/.bashrc
 
-export GUROBI_HOME=/home/akshat/opt/gurobi1003/linux64
+# add these lines to .bashrc
+export GUROBI_HOME=/home/yerbol/opt/gurobi1003/linux64
 export PATH=$GUROBI_HOME/bin:$PATH
+export GRB_LICENSE_FILE="home/yerbol/opt/gurobi1003/gurobi.lic"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
 
-# copy and move gurobi.lic to /opt/gurobi1003/gurobi.lic
+# copy and move gurobi.lic to /home/yerbol/opt/gurobi1003/gurobi.lic
 
 gurobi.sh
